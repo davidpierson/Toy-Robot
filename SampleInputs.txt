@@ -1,0 +1,30 @@
+JUNK-COMMAND
+PLACE
+PLACE 1,Alpha,NORTH
+PLACE 2,2,no_direction
+PLACE 4,4,EAST
+MOVE  # ignored
+LEFT  # north
+LEFT  # west
+MOVE  # 3,4
+MOVE  # 2,4
+MOVE  # 1,4
+MOVE  # 0,4
+MOVE  # ignored
+LEFT  # south
+MOVE  # 0,3
+MOVE  # 0,2
+RIGHT # West
+MOVE  # ignored
+RIGHT # North
+RIGHT # East
+MOVE  # 1,2
+RIGHT # South
+MOVE  # 1,1
+MOVE  # 1,0
+MOVE  # ignored
+MOVE  # ignored
+LEFT  # East
+MOVE  # 2,0
+MOVE  # 3,0
+REPORT

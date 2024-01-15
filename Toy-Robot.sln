@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toy-Robot", "Toy-Robot\Toy-Robot.csproj", "{94B9A511-CC1B-493B-9D64-80CA58A4CAEB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solutions Items", "Solutions Items", "{D8C7CB66-F5B7-455F-BC77-DFE6C0961F56}"
+	ProjectSection(SolutionItems) = preProject
+		LICENCE.txt = LICENCE.txt
+		README.md = README.md
+		SampleInputs.txt = SampleInputs.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94B9A511-CC1B-493B-9D64-80CA58A4CAEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94B9A511-CC1B-493B-9D64-80CA58A4CAEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94B9A511-CC1B-493B-9D64-80CA58A4CAEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94B9A511-CC1B-493B-9D64-80CA58A4CAEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46FD5BD7-9ACA-4BE6-B6D7-890545C2EC3D}
+	EndGlobalSection
+EndGlobal
