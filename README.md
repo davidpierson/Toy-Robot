@@ -2,9 +2,27 @@
 
 #### What is this ?
 
-Toy Robot is a C# coding exercise that we get our potential candidates complete for us (Pronamics) to understand their capabilities.  
+Toy Robot is a C# coding exercise written for Pronamics as part of a position application.  
 
-#### What do I need to do ?
+#### How should this be executed ?
+
+Fetch the repository to a folder of your choice.
+- To run with the supplied sample inputs in the "SampleInputs.txt" solution item, simply run the code.
+- As coded, the console output will include every command the resulting position, just as if a REPORT was included every line.
+- To use your own inputs, alter the first line in Program.cs "#define CMD_LINE_ORIDE" to defeat it e.g. "#define CMD_LINE_ORIDExxxx"
+- When run with your own inputs, if no command line argument is supplied, input is from the console. An empty inout line starts the execution.
+- Otherwise, the command line parameter is the relative or absolute name of a file of inputs.
+- To stop the automatic reporting of position after every line, defeat the "#define REPORT_ALL" on line 5 of Program.cs file. For example "#define REPORT_ALLxxxx"
+ 
+#### Validation of input syntax
+
+Invalid or incomprehensible inputs are reported with an explanatory error message including the failed input and ignored, and do not cancel the run. 
+
+#### Testing
+
+To test this I added the "#define REPORT_ALL" and verified the robot's progress. I have not ever worked in a job position that had any unit testing, such as NUnit, in place.
+In practice, the issues we saw there were system-level complex cases that involved a sequence of events over time, often affected by interactions with external systems. These would be a potential target for a whole-of-system test. 
+As a result, I've not included any Nunit or similar here. 
 
 ## Specification
 
@@ -77,37 +95,7 @@ REPORT
 ```
 Output: `3,3,NORTH`
 
-#### Why am I doing this ?
-
-At Pronamics we believe these kinds of coding challenges will give us more visibility into the candidate's strengths. On the other hand, candidates can show their 
-capabilities by applying what they already know. 
-
-#### What’s next ?
-
-- clone this repo
-- Do your changes
-- Email us the link to your public git repo with the solution
-
-
-#### What do We expect as deliveries?
-
-While we love to see a working code, the most important aspects we are looking in to is, 
-
-- How you would approach a problem 
-- How you approach around testing 
-- Any other related documents (E.g README) that will help someone to set up and run this project.
-
-#### What are the next steps ? 
-
-Once you completed the exercise and let us know, we'll go through your code and if we are happy with your code, we'll contact you for the next step, which is a 
-discussion on this code and your thinking / approach to this problem. 
-
 #### Toy robot is a very common coding test and I can find heaps of sample code ?
 
-Yes, true, this is a very famous common test. However, we sincerely hope that you'll not just copy and paste a code from internet :). 
-
-In Fact the author of this test himself has described, why this test is still relevant, even though there are many examples out there
-
-[Toy Robot Coding Puzzle](https://joneaves.wordpress.com/2014/07/21/toy-robot-coding-test/)
-
-All the very best !!!
+I haven't looked up any sample code for this puzzle and would be amazed if my solution looks familiar to any other.
+The coding styles here are a combination of my experiences. I easily adapt to the local practices and we always aimed for a high consistency code base that you could not tell which developer wrote it. 

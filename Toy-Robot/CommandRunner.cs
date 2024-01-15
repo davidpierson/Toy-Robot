@@ -38,7 +38,7 @@
 					newPosition.Direction = placer.F;
 					break;
 				case CommandEnum.ceMove:
-					MoveRobot(newPosition);
+					newPosition.MoveRobot();
 					break;
 				case CommandEnum.ceLeft:
 					newPosition.Direction -= 90;
@@ -72,24 +72,7 @@
 			if (doReport)
 				Console.WriteLine($"X = {position.X}, Y = {position.Y}, F = {position.Direction.ToString().Substring(2)}");
 		}
-		// MOVE will move the toy robot one unit forward in the direction it is currently facing.
-		//
-		private void MoveRobot(RobotSituation position) {
-			switch (position.Direction) {
-				case DirectionEnum.diNorth:
-					position.Y++;
-					break;
-				case DirectionEnum.diSouth:
-					position.Y--;
-					break;
-				case DirectionEnum.diEast:
-					position.X++;
-					break;
-				case DirectionEnum.diWest:
-					position.X--;
-					break;
-			}
-		}
+
 
 	}
 }
