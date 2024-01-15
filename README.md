@@ -8,9 +8,9 @@ Toy Robot is a C# coding exercise written for Pronamics as part of a position ap
 
 Fetch the repository to a folder of your choice.
 - To run with the supplied sample inputs in the "SampleInputs.txt" solution item, simply run the code.
-- As coded, the console output will include every command the resulting position, just as if a REPORT was included every line.
+- As coded, the console output will include every command & the resulting position, just as if a REPORT was included every line.
 - To use your own inputs, alter the first line in Program.cs "#define CMD_LINE_ORIDE" to defeat it e.g. "#define CMD_LINE_ORIDExxxx"
-- When run with your own inputs, if no command line argument is supplied, input is from the console. An empty inout line starts the execution.
+- When run with your own inputs, if no command line argument is supplied, input is from the console. An empty input line starts the execution.
 - Otherwise, the command line parameter is the relative or absolute name of a file of inputs.
 - To stop the automatic reporting of position after every line, defeat the "#define REPORT_ALL" on line 5 of Program.cs file. For example "#define REPORT_ALLxxxx"
  
